@@ -1,0 +1,94 @@
+{
+  "batch_a": "T056",
+  "batch_b": "T051",
+  "diffs": {
+    "granulation_time": {
+      "batch_a_value": 27.0,
+      "batch_b_value": 9.0,
+      "absolute_diff": 18.0,
+      "label": "Granulation Time"
+    },
+    "binder_amount": {
+      "batch_a_value": 13.5,
+      "batch_b_value": 5.8,
+      "absolute_diff": 7.7,
+      "label": "Binder Amount"
+    },
+    "drying_temp": {
+      "batch_a_value": 42.0,
+      "batch_b_value": 73.0,
+      "absolute_diff": -31.0,
+      "label": "Drying Temp"
+    },
+    "drying_time": {
+      "batch_a_value": 48.0,
+      "batch_b_value": 15.0,
+      "absolute_diff": 33.0,
+      "label": "Drying Time"
+    },
+    "compression_force": {
+      "batch_a_value": 4.5,
+      "batch_b_value": 18.0,
+      "absolute_diff": -13.5,
+      "label": "Compression Force"
+    },
+    "machine_speed": {
+      "batch_a_value": 280.0,
+      "batch_b_value": 92.0,
+      "absolute_diff": 188.0,
+      "label": "Machine Speed"
+    },
+    "lubricant_conc": {
+      "batch_a_value": 2.8,
+      "batch_b_value": 0.4,
+      "absolute_diff": 2.4,
+      "label": "Lubricant Conc"
+    },
+    "moisture_content": {
+      "batch_a_value": 0.2,
+      "batch_b_value": 3.6,
+      "absolute_diff": -3.4,
+      "label": "Moisture Content"
+    },
+    "dissolution_rate": {
+      "batch_a_value": 99.9,
+      "batch_b_value": 81.2,
+      "absolute_diff": 18.7,
+      "label": "Dissolution Rate"
+    },
+    "friability": {
+      "batch_a_value": 1.92,
+      "batch_b_value": 0.29,
+      "absolute_diff": 1.63,
+      "label": "Friability"
+    },
+    "hardness": {
+      "batch_a_value": 40.0,
+      "batch_b_value": 135.0,
+      "absolute_diff": -95.0,
+      "label": "Hardness"
+    },
+    "disintegration_time": {
+      "batch_a_value": 2.6,
+      "batch_b_value": 17.5,
+      "absolute_diff": -14.9,
+      "label": "Disintegration Time"
+    },
+    "tablet_weight": {
+      "batch_a_value": 213.8,
+      "batch_b_value": 204.7,
+      "absolute_diff": 9.1,
+      "label": "Tablet Weight"
+    },
+    "content_uniformity": {
+      "batch_a_value": 89.8,
+      "batch_b_value": 106.3,
+      "absolute_diff": -16.5,
+      "label": "Content Uniformity"
+    }
+  },
+  "main_driver": "machine_speed",
+  "main_driver_label": "Machine Speed",
+  "main_driver_diff": 188.0,
+  "narrative": "T056 achieved 99.9% dissolution vs T051's 81.2% \u2014 a 18.7 percentage point difference. Primary driver: Machine Speed (280.0 vs 92.0, diff: +188.0). Higher compression force in T051 created denser tablets \u2014 improving mechanical strength but reducing porosity and slowing dissolution."
+}

@@ -1,0 +1,84 @@
+{
+  "global": {
+    "granulation_time": 0.1254,
+    "binder_amount": 0.1254,
+    "drying_time": 0.1252,
+    "machine_speed": 0.1252,
+    "moisture_content": 0.125,
+    "compression_force": 0.1248,
+    "drying_temp": 0.1246,
+    "lubricant_conc": 0.1244
+  },
+  "by_target": {
+    "dissolution_rate": {
+      "granulation_time": 0.1254,
+      "binder_amount": 0.1254,
+      "drying_temp": 0.1246,
+      "drying_time": 0.1252,
+      "compression_force": 0.1248,
+      "machine_speed": 0.1252,
+      "lubricant_conc": 0.1244,
+      "moisture_content": 0.125
+    },
+    "friability": {
+      "granulation_time": 0.1254,
+      "binder_amount": 0.1254,
+      "drying_temp": 0.1246,
+      "drying_time": 0.1252,
+      "compression_force": 0.1248,
+      "machine_speed": 0.1252,
+      "lubricant_conc": 0.1244,
+      "moisture_content": 0.125
+    },
+    "hardness": {
+      "granulation_time": 0.1254,
+      "binder_amount": 0.1254,
+      "drying_temp": 0.1246,
+      "drying_time": 0.1252,
+      "compression_force": 0.1248,
+      "machine_speed": 0.1252,
+      "lubricant_conc": 0.1244,
+      "moisture_content": 0.125
+    },
+    "disintegration_time": {
+      "granulation_time": 0.1254,
+      "binder_amount": 0.1254,
+      "drying_temp": 0.1246,
+      "drying_time": 0.1252,
+      "compression_force": 0.1248,
+      "machine_speed": 0.1252,
+      "lubricant_conc": 0.1244,
+      "moisture_content": 0.125
+    },
+    "tablet_weight": {
+      "granulation_time": 0.1254,
+      "binder_amount": 0.1254,
+      "drying_temp": 0.1246,
+      "drying_time": 0.1252,
+      "compression_force": 0.1248,
+      "machine_speed": 0.1252,
+      "lubricant_conc": 0.1244,
+      "moisture_content": 0.125
+    },
+    "content_uniformity": {
+      "granulation_time": 0.1254,
+      "binder_amount": 0.1254,
+      "drying_temp": 0.1246,
+      "drying_time": 0.1252,
+      "compression_force": 0.1248,
+      "machine_speed": 0.1252,
+      "lubricant_conc": 0.1244,
+      "moisture_content": 0.125
+    }
+  },
+  "feature_labels": {
+    "granulation_time": "Granulation Time",
+    "binder_amount": "Binder Amount",
+    "drying_temp": "Drying Temp",
+    "drying_time": "Drying Time",
+    "compression_force": "Compression Force",
+    "machine_speed": "Machine Speed",
+    "lubricant_conc": "Lubricant Conc",
+    "moisture_content": "Moisture Content"
+  }
+}

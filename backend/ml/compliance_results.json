@@ -1,0 +1,2102 @@
+{
+  "T001": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 89.585,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.667,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 95.913,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 8.303,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.383,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 98.997,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T002": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 86.628,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.459,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 113.619,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 11.932,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 201.964,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 102.33,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T003": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 92.031,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.815,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 83.637,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 6.588,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 198.694,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 97.147,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T004": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 94.013,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.902,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 76.064,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 5.562,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.815,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 95.87,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T005": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": false,
+        "predicted": 84.361,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.371,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 124.47,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": false,
+        "predicted": 14.656,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 203.452,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 104.332,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T006": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 90.054,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.701,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 93.234,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 7.922,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.185,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 98.574,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T007": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 87.723,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.524,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 107.348,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 10.371,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 201.062,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 101.085,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T008": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 96.35,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.136,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 64.965,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 4.358,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 205.601,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 94.115,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T009": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 87.845,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.532,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 106.604,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 10.202,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.977,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 100.938,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T010": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 92.137,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.82,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 83.2,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 6.527,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 198.67,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 97.079,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T011": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": false,
+        "predicted": 85.253,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.403,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 120.435,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 13.664,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 202.972,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 103.618,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T012": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 93.86,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.893,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 76.653,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 5.637,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.467,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 95.973,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T013": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 89.42,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.654,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 96.883,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 8.445,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.428,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 99.155,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T014": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 97.536,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.295,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 57.731,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 3.808,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": false,
+        "predicted": 206.975,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 93.091,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T015": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 86.854,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.471,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 112.395,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 11.615,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 201.774,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 102.089,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T016": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 92.589,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.838,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 81.416,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 6.278,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 198.729,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 96.794,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T017": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 88.229,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.561,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 104.218,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 9.698,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.755,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 100.472,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T018": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 95.611,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.046,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 68.966,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 4.739,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 204.468,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 94.707,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T019": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 90.143,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.708,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 92.74,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 7.853,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.133,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 98.498,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T020": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": false,
+        "predicted": 82.656,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.317,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 131.66,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": false,
+        "predicted": 16.42,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 204.228,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 105.545,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T021": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 91.48,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.789,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 86.026,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 6.922,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 198.999,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 97.506,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T022": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 87.516,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.51,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 108.596,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 10.663,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 201.22,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 101.333,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T023": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 94.906,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 0.971,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 72.346,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 5.108,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 202.99,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 95.24,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T024": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 89.377,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.651,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 97.142,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 8.484,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.439,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 99.198,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T025": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 98.426,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.437,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": false,
+        "predicted": 51.892,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 3.438,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": false,
+        "predicted": 208.247,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 92.228,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T026": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": false,
+        "predicted": 85.53,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.413,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 119.13,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 13.339,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 202.797,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 103.38,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T027": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 92.325,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.828,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 82.445,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 6.421,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 198.662,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 96.961,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T028": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 88.163,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.556,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 104.634,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 9.782,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.788,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 100.552,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T029": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 96.733,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.185,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 62.727,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 4.171,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": false,
+        "predicted": 206.064,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 93.796,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T030": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 90.227,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.714,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 92.278,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 7.788,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.078,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 98.428,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T031": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": false,
+        "predicted": 83.707,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.35,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 127.296,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": false,
+        "predicted": 15.347,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 203.768,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 104.816,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T032": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 93.768,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.888,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 77.005,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 5.683,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.266,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 96.035,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T033": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 87.623,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.517,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 107.954,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 10.511,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 201.137,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 101.205,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T034": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 95.762,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.064,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 68.188,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 4.66,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 204.732,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 94.589,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T035": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 89.442,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.656,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 96.756,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 8.426,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.423,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 99.135,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T036": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 99.132,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.59,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": false,
+        "predicted": 47.053,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 3.133,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": false,
+        "predicted": 209.797,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 91.411,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T037": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 86.112,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.436,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 116.288,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 12.62,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 202.38,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 102.846,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T038": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 91.615,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.796,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 85.424,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 6.838,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 198.901,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 97.417,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T039": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 88.472,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.579,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 102.699,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 9.405,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.655,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 100.184,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T040": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 97.792,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.332,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 56.082,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 3.7,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": false,
+        "predicted": 207.293,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 92.855,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T041": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 90.739,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.747,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 89.588,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 7.416,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 199.666,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 98.028,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T042": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": false,
+        "predicted": 84.541,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.378,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 123.674,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": false,
+        "predicted": 14.461,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 203.361,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 104.194,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T043": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 94.531,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.938,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 73.974,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 5.301,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 202.081,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 95.51,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T044": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 89.412,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.653,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 96.932,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 8.453,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.43,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 99.164,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T045": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 99.614,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.752,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": false,
+        "predicted": 43.362,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 2.878,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": false,
+        "predicted": 211.582,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 90.677,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T046": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 86.504,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.453,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 114.276,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 12.102,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 202.067,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 102.459,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T047": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 92.443,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.832,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 81.98,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 6.357,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 198.68,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 96.886,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T048": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 87.989,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.543,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 105.71,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 10.007,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.885,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 100.762,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T049": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 95.905,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.081,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 67.429,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 4.585,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 204.967,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 94.475,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T050": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 90.239,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.714,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 92.212,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 7.779,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.07,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 98.418,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T051": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": false,
+        "predicted": 82.151,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.302,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 133.695,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": false,
+        "predicted": 16.925,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 204.405,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 105.879,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T052": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 93.552,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.877,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 77.816,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 5.79,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 199.837,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 96.178,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T053": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 87.194,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.49,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 110.48,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 11.127,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 201.485,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 101.709,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T054": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 96.901,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.208,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 61.71,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 4.092,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": false,
+        "predicted": 206.255,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 93.652,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T055": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 89.507,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.661,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 96.37,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 8.369,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.406,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 99.071,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T056": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 99.849,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.895,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": false,
+        "predicted": 40.897,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 2.699,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": false,
+        "predicted": 212.868,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 90.094,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T057": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": false,
+        "predicted": 85.101,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.397,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 121.138,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 13.838,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 203.061,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 103.745,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  },
+  "T058": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 91.637,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.797,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 85.324,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 6.824,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 198.886,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 97.402,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T059": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 88.432,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": true,
+        "predicted": 0.576,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": true,
+        "predicted": 102.95,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 9.452,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": true,
+        "predicted": 200.67,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 100.231,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": true
+  },
+  "T060": {
+    "targets": {
+      "dissolution_rate": {
+        "compliant": true,
+        "predicted": 98.504,
+        "limit": "Min 85%"
+      },
+      "friability": {
+        "compliant": false,
+        "predicted": 1.451,
+        "limit": "Max 1.0%"
+      },
+      "hardness": {
+        "compliant": false,
+        "predicted": 51.368,
+        "limit": "Min 50N"
+      },
+      "disintegration_time": {
+        "compliant": true,
+        "predicted": 3.406,
+        "limit": "Max 15 min"
+      },
+      "tablet_weight": {
+        "compliant": false,
+        "predicted": 208.386,
+        "limit": "195\u2013207 mg"
+      },
+      "content_uniformity": {
+        "compliant": true,
+        "predicted": 92.145,
+        "limit": "85\u2013115%"
+      }
+    },
+    "fully_compliant": false
+  }
+}

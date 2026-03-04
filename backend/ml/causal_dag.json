@@ -1,0 +1,188 @@
+{
+  "nodes": [
+    {
+      "id": "granulation_time",
+      "label": "Granulation Time",
+      "type": "input",
+      "causal_importance": 0
+    },
+    {
+      "id": "binder_amount",
+      "label": "Binder Amount",
+      "type": "input",
+      "causal_importance": 0
+    },
+    {
+      "id": "drying_temp",
+      "label": "Drying Temp",
+      "type": "input",
+      "causal_importance": 0
+    },
+    {
+      "id": "drying_time",
+      "label": "Drying Time",
+      "type": "input",
+      "causal_importance": 0
+    },
+    {
+      "id": "compression_force",
+      "label": "Compression Force",
+      "type": "input",
+      "causal_importance": 0
+    },
+    {
+      "id": "machine_speed",
+      "label": "Machine Speed",
+      "type": "input",
+      "causal_importance": 0
+    },
+    {
+      "id": "lubricant_conc",
+      "label": "Lubricant Conc",
+      "type": "input",
+      "causal_importance": 1
+    },
+    {
+      "id": "moisture_content",
+      "label": "Moisture Content",
+      "type": "input",
+      "causal_importance": 1
+    },
+    {
+      "id": "dissolution_rate",
+      "label": "Dissolution Rate",
+      "type": "output",
+      "causal_importance": 0
+    },
+    {
+      "id": "friability",
+      "label": "Friability",
+      "type": "output",
+      "causal_importance": 1
+    },
+    {
+      "id": "hardness",
+      "label": "Hardness",
+      "type": "output",
+      "causal_importance": 1
+    },
+    {
+      "id": "disintegration_time",
+      "label": "Disintegration Time",
+      "type": "output",
+      "causal_importance": 1
+    },
+    {
+      "id": "tablet_weight",
+      "label": "Tablet Weight",
+      "type": "output",
+      "causal_importance": 0
+    },
+    {
+      "id": "content_uniformity",
+      "label": "Content Uniformity",
+      "type": "output",
+      "causal_importance": 0
+    }
+  ],
+  "edges": [
+    {
+      "from": "granulation_time",
+      "to": "machine_speed",
+      "from_label": "Granulation Time",
+      "to_label": "Machine Speed",
+      "type": "directed"
+    },
+    {
+      "from": "binder_amount",
+      "to": "granulation_time",
+      "from_label": "Binder Amount",
+      "to_label": "Granulation Time",
+      "type": "directed"
+    },
+    {
+      "from": "binder_amount",
+      "to": "drying_time",
+      "from_label": "Binder Amount",
+      "to_label": "Drying Time",
+      "type": "directed"
+    },
+    {
+      "from": "drying_temp",
+      "to": "moisture_content",
+      "from_label": "Drying Temp",
+      "to_label": "Moisture Content",
+      "type": "undirected"
+    },
+    {
+      "from": "drying_time",
+      "to": "compression_force",
+      "from_label": "Drying Time",
+      "to_label": "Compression Force",
+      "type": "directed"
+    },
+    {
+      "from": "lubricant_conc",
+      "to": "binder_amount",
+      "from_label": "Lubricant Conc",
+      "to_label": "Binder Amount",
+      "type": "directed"
+    },
+    {
+      "from": "lubricant_conc",
+      "to": "friability",
+      "from_label": "Lubricant Conc",
+      "to_label": "Friability",
+      "type": "undirected"
+    },
+    {
+      "from": "moisture_content",
+      "to": "binder_amount",
+      "from_label": "Moisture Content",
+      "to_label": "Binder Amount",
+      "type": "directed"
+    },
+    {
+      "from": "moisture_content",
+      "to": "dissolution_rate",
+      "from_label": "Moisture Content",
+      "to_label": "Dissolution Rate",
+      "type": "undirected"
+    },
+    {
+      "from": "friability",
+      "to": "tablet_weight",
+      "from_label": "Friability",
+      "to_label": "Tablet Weight",
+      "type": "undirected"
+    },
+    {
+      "from": "hardness",
+      "to": "compression_force",
+      "from_label": "Hardness",
+      "to_label": "Compression Force",
+      "type": "directed"
+    },
+    {
+      "from": "hardness",
+      "to": "content_uniformity",
+      "from_label": "Hardness",
+      "to_label": "Content Uniformity",
+      "type": "undirected"
+    },
+    {
+      "from": "disintegration_time",
+      "to": "tablet_weight",
+      "from_label": "Disintegration Time",
+      "to_label": "Tablet Weight",
+      "type": "undirected"
+    }
+  ],
+  "summary": {
+    "total_edges": 13,
+    "directed_edges": 7,
+    "undirected_edges": 6,
+    "primary_driver": "lubricant_conc",
+    "primary_driver_label": "Lubricant Conc"
+  }
+}

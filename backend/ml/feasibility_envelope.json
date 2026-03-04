@@ -1,0 +1,6 @@
+{
+  "compression_force_min": 8.5,
+  "compression_force_max": 15.5,
+  "feasible_batch_count": 38,
+  "description": "Feasibility window: 8.5\u201315.5 kN (38 of 60 batches)"
+}

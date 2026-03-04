@@ -1,0 +1,38 @@
+{
+  "dissolution_rate": {
+    "coverage_90": 71.7,
+    "coverage_95": 73.3,
+    "mape": 0.47,
+    "accuracy": 99.53
+  },
+  "friability": {
+    "coverage_90": 85.0,
+    "coverage_95": 90.0,
+    "mape": 2.62,
+    "accuracy": 97.38
+  },
+  "hardness": {
+    "coverage_90": 71.7,
+    "coverage_95": 78.3,
+    "mape": 1.75,
+    "accuracy": 98.25
+  },
+  "disintegration_time": {
+    "coverage_90": 88.3,
+    "coverage_95": 98.3,
+    "mape": 2.49,
+    "accuracy": 97.51
+  },
+  "tablet_weight": {
+    "coverage_90": 75.0,
+    "coverage_95": 95.0,
+    "mape": 0.26,
+    "accuracy": 99.74
+  },
+  "content_uniformity": {
+    "coverage_90": 75.0,
+    "coverage_95": 80.0,
+    "mape": 0.35,
+    "accuracy": 99.65
+  }
+}

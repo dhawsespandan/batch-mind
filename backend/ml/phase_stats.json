@@ -1,0 +1,58 @@
+{
+  "Preparation": {
+    "mean_kwh": 0.69,
+    "std_kwh": 0.13,
+    "min_kwh": 0.43,
+    "max_kwh": 0.91,
+    "pct_of_total": 0.7
+  },
+  "Granulation": {
+    "mean_kwh": 4.16,
+    "std_kwh": 1.14,
+    "min_kwh": 2.21,
+    "max_kwh": 6.81,
+    "pct_of_total": 4.5
+  },
+  "Drying": {
+    "mean_kwh": 12.01,
+    "std_kwh": 3.42,
+    "min_kwh": 6.63,
+    "max_kwh": 20.34,
+    "pct_of_total": 12.9
+  },
+  "Milling": {
+    "mean_kwh": 8.65,
+    "std_kwh": 1.8,
+    "min_kwh": 5.53,
+    "max_kwh": 12.0,
+    "pct_of_total": 9.3
+  },
+  "Blending": {
+    "mean_kwh": 4.04,
+    "std_kwh": 0.57,
+    "min_kwh": 2.88,
+    "max_kwh": 5.06,
+    "pct_of_total": 4.3
+  },
+  "Compression": {
+    "mean_kwh": 50.24,
+    "std_kwh": 10.83,
+    "min_kwh": 32.84,
+    "max_kwh": 68.56,
+    "pct_of_total": 53.8
+  },
+  "Coating": {
+    "mean_kwh": 9.88,
+    "std_kwh": 2.16,
+    "min_kwh": 6.58,
+    "max_kwh": 14.0,
+    "pct_of_total": 10.6
+  },
+  "Quality_Testing": {
+    "mean_kwh": 3.69,
+    "std_kwh": 0.71,
+    "min_kwh": 2.45,
+    "max_kwh": 5.07,
+    "pct_of_total": 4.0
+  }
+}
