@@ -75,9 +75,10 @@ export default function DashboardView() {
               <XAxis type="number" tick={{ fill: 'var(--text-secondary)', fontSize: 11 }} />
               <YAxis dataKey="phase" type="category" tick={{ fill: 'var(--text-secondary)', fontSize: 11 }} width={90} />
               <Tooltip
-                contentStyle={{ background: 'var(--surface2)', border: '1px solid var(--border)', borderRadius: 8 }}
-                labelStyle={{ color: 'var(--text-primary)' }}
-                formatter={(v: any) => [`${v} kWh`, 'Energy']}
+              contentStyle={{ background: '#1a1a2e', border: '1px solid #4444aa', borderRadius: 8, color: '#ffffff' }}
+              labelStyle={{ color: '#00d4ff', fontWeight: 700, fontSize: 13 }}
+              itemStyle={{ color: '#ffffff', fontSize: 12 }}
+              formatter={(v: any) => [`${v} kWh`, 'Energy']}
               />
               <Bar dataKey="mean_kwh" radius={[0, 4, 4, 0]}>
                 {phaseEnergy.map((entry, i) => (
@@ -90,12 +91,11 @@ export default function DashboardView() {
               </Bar>
             </BarChart>
           </ResponsiveContainer>
-          <div style={{ marginTop: 12, padding: '10px 14px', background: 'rgba(255,170,0,0.08)', borderRadius: 8, border: '1px solid rgba(255,170,0,0.2)' }}>
-            <span style={{ color: 'var(--amber)', fontSize: 12, fontWeight: 600 }}>⚡ Compression = {overview?.compression_energy_pct}% of total energy</span>
-            <div style={{ color: 'var(--text-secondary)', fontSize: 11, marginTop: 3 }}>
+          <div style={{ marginTop: 12, padding: '12px 16px', background: 'rgba(255,170,0,0.15)', borderRadius: 8, border: '2px solid rgba(255,170,0,0.5)' }}>
+            <span style={{ color: '#ffcc44', fontSize: 13, fontWeight: 700 }}>⚡ Compression = {overview?.compression_energy_pct}% of total energy</span><div style={{ color: '#ccaa66', fontSize: 12, marginTop: 4 }}>
               Same variable driving quality trade-off also drives energy
-            </div>
-          </div>
+              </div>
+              </div>
         </Card>
 
         {/* Model Accuracy */}
@@ -141,14 +141,14 @@ export default function DashboardView() {
       </div>
 
       {/* Key Finding */}
-      <Card style={{ background: 'rgba(0,212,255,0.04)', border: '1px solid rgba(0,212,255,0.2)' }}>
+      <Card style={{ background: 'rgba(0,212,255,0.12)', border: '2px solid rgba(0,212,255,0.5)' }}>
         <div style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
           <div style={{ fontSize: 32 }}>⚠</div>
           <div>
             <div style={{ fontWeight: 700, color: 'var(--cyan)', marginBottom: 4 }}>
               Core Finding: Zero batches in this dataset satisfy all regulatory constraints simultaneously
             </div>
-            <div style={{ color: 'var(--text-secondary)', fontSize: 13 }}>
+            <div style={{ color: '#aaddee', fontSize: 13 }}>
               The Dissolution–Friability trade-off is structurally embedded in Compression Force.
               Feasibility window: <strong style={{ color: 'var(--text-primary)' }}>8.0–14.0 kN</strong> is the only region where compliant batches exist.
               BatchMind identifies this envelope and constrains all optimization to it.
