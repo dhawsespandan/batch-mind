@@ -3,28 +3,97 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0f;
-  --surface: #111118;
-  --surface2: #1a1a24;
-  --border: #2a2a3a;
-  --text-primary: #e8e8f0;
-  --text-secondary: #8888aa;
-  --cyan: #00d4ff;
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 6.5%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 6.5%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 190 90% 50%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 8.7% 12.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 8.7% 12.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 8.7% 12.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 8.7% 15.9%;
+  --input: 240 8.7% 15.9%;
+  --ring: 190 90% 50%;
+  --radius: 0.5rem;
+
+  /* BatchMind custom tokens */
+  --bm-bg: #09090f;
+  --bm-surface: #0f0f18;
+  --bm-surface2: #16161f;
+  --bm-border: hsl(240 8.7% 15.9%);
+  --bm-text: hsl(0 0% 98%);
+  --bm-muted: hsl(240 5% 64.9%);
+  --bm-cyan: hsl(190 90% 50%);
+  --bm-green: #00ff88;
+  --bm-red: #ff4466;
+  --bm-amber: #ffaa00;
+  --bm-purple: #8866ff;
+
+  /* Legacy tokens used in existing components */
+  --background: #09090f;
+  --surface: #0f0f18;
+  --surface2: #16161f;
+  --text-primary: hsl(0 0% 98%);
+  --text-secondary: hsl(240 5% 64.9%);
+  --cyan: hsl(190 90% 50%);
   --green: #00ff88;
   --red: #ff4466;
   --amber: #ffaa00;
   --purple: #8866ff;
 }
 
-* { box-sizing: border-box; }
-
-body {
-  background: var(--background);
-  color: var(--text-primary);
-  font-family: 'Inter', system-ui, sans-serif;
-  margin: 0;
+* {
+  box-sizing: border-box;
+  border-color: hsl(var(--border));
 }
 
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--surface); }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bm-bg);
+  color: hsl(var(--foreground));
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bm-surface); }
+::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(240 8.7% 22%); }
+
+/* Glass panel utility */
+.glass-panel {
+  background: rgba(15, 15, 24, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.accent-glow {
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.08);
+}
+
+/* Recharts tooltip override */
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background: #16161f !important;
+  border: 1px solid hsl(240 8.7% 20%) !important;
+  border-radius: 8px !important;
+  color: hsl(0 0% 98%) !important;
+}
