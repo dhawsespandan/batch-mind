@@ -16,6 +16,8 @@ async function post(path: string, body: object) {
   return res.json()
 }
 
+
+
 export const api = {
   // Dashboard
   getOverview: () => get('/dashboard/overview'),
@@ -35,10 +37,13 @@ export const api = {
   optimizeParameters: (weights: object) => post('/optimize/parameters', { weights }),
 
   // Signatures
+  // Signatures
   getSignatures: () => get('/signatures/'),
   getSignature: (id: string) => get(`/signatures/${id}`),
   submitApproval: (data: object) => post('/signatures/approval', data),
   getApprovalHistory: () => get('/signatures/approvals/history'),
+  checkImprovement: () => get('/signatures/check-improvement'),
+  updateSignature: (id: string, data: object) => post(`/signatures/update/${id}`, data),
 
   // Copilot
   chat: (message: string, history: object[], context?: object) =>

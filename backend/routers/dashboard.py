@@ -9,7 +9,6 @@ load_dotenv(dotenv_path=os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '.env'
 ))
 
-# sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from state import get_models
 
 router = APIRouter()
@@ -18,6 +17,9 @@ supabase = create_client(
     os.getenv("SUPABASE_URL"),
     os.getenv("SUPABASE_SERVICE_KEY")
 )
+
+# India grid carbon intensity (kg CO₂e per kWh) — CEA 2023
+CARBON_INTENSITY = 0.82
 
 @router.get("/overview")
 def get_overview():
@@ -40,6 +42,12 @@ def get_overview():
         total_mean_energy * 100, 1
     ) if total_mean_energy > 0 else 53.8
 
+    mean_co2e = round(total_mean_energy * CARBON_INTENSITY, 2)
+    min_co2e = round(72.71 * CARBON_INTENSITY, 2)
+    max_co2e = round(117.14 * CARBON_INTENSITY, 2)
+    co2e_saving = round((117.14 - 72.71) * CARBON_INTENSITY, 2)
+    co2e_saving_pct = round((117.14 - 72.71) / 117.14 * 100, 1)
+
     return {
         'model_accuracy': round(float(avg_accuracy), 2),
         'total_batches': 60,
@@ -55,9 +63,14 @@ def get_overview():
         'min_energy_kwh': 72.71,
         'max_energy_kwh': 117.14,
         'mean_energy_kwh': round(total_mean_energy, 2),
-        'energy_saving_potential_pct': round(
-            (117.14 - 72.71) / 117.14 * 100, 1
-        )
+        'energy_saving_potential_pct': co2e_saving_pct,
+        # CO₂e fields
+        'carbon_intensity': CARBON_INTENSITY,
+        'mean_co2e_kg': mean_co2e,
+        'min_co2e_kg': min_co2e,
+        'max_co2e_kg': max_co2e,
+        'co2e_saving_kg': co2e_saving,
+        'co2e_saving_pct': co2e_saving_pct,
     }
 
 @router.get("/phase-energy")
@@ -67,16 +80,18 @@ def get_phase_energy():
 
     phases = []
     for phase_name, stats in phase_stats.items():
+        mean_kwh = stats['mean_kwh']
         phases.append({
             'phase': phase_name,
-            'mean_kwh': stats['mean_kwh'],
+            'mean_kwh': mean_kwh,
             'std_kwh': stats['std_kwh'],
             'min_kwh': stats['min_kwh'],
             'max_kwh': stats['max_kwh'],
-            'pct_of_total': stats.get('pct_of_total', 0)
+            'pct_of_total': stats.get('pct_of_total', 0),
+            'mean_co2e_kg': round(mean_kwh * CARBON_INTENSITY, 2),
         })
 
-    return {'phases': phases}
+    return {'phases': phases, 'carbon_intensity': CARBON_INTENSITY}
 
 @router.get("/batch-scatter")
 def get_batch_scatter():
@@ -106,6 +121,7 @@ def get_batch_scatter():
             'friability': preds.get('friability', {}).get('predicted', 0),
             'hardness': preds.get('hardness', {}).get('predicted', 0),
             'total_energy_kwh': round(float(energy), 2),
+            'co2e_kg': round(float(energy) * CARBON_INTENSITY, 2),
             'in_feasible_zone': in_zone
         })
 
@@ -120,7 +136,6 @@ def get_causal_dag():
 def get_model_stats():
     m = get_models()
     coverage = m['coverage_stats']
-    loo = m['training_data']
 
     stats = []
     for target, data in coverage.items():

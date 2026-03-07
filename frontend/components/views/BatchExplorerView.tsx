@@ -5,7 +5,7 @@ import { api } from '../../lib/api'
 const STATUS_CONFIG: Record<string, { color: string; bg: string; label: string }> = {
   feasible: { color: 'var(--green)', bg: 'rgba(0,255,136,0.12)', label: 'FEASIBLE' },
   infeasible: { color: 'var(--red)', bg: 'rgba(255,68,102,0.12)', label: 'INFEASIBLE' },
-  borderline: { color: 'var(--amber)', bg: 'rgba(255,170,0,0.12)', label: 'BORDERLINE' },
+  // borderline: { color: 'var(--amber)', bg: 'rgba(255,170,0,0.12)', label: 'BORDERLINE' },
 }
 
 const COLUMNS = [
@@ -41,6 +41,9 @@ export default function BatchExplorerView() {
   const [filter, setFilter] = useState<'all' | 'feasible' | 'infeasible'>('all')
   const [search, setSearch] = useState('')
   const [sort, setSort] = useState<{ key: string; dir: 'asc' | 'desc' }>({ key: 'batch_id', dir: 'asc' })
+  const toggleSort = (key: string) => {
+    setSort(s => s.key === key ? { key, dir: s.dir === 'asc' ? 'desc' : 'asc' } : { key, dir: 'asc' })
+  }
 
   useEffect(() => {
     api.getAllBatches().then(data => {
@@ -94,7 +97,7 @@ const counts = {
       {/* Filter tabs + search */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 16 }}>
         <div style={{ display: 'flex', gap: 8 }}>
-          {(['all', 'feasible', 'infeasible', 'borderline'] as const).map(f => (
+          {(['all', 'feasible', 'infeasible'] as const).map(f => (
             <button
               key={f}
               onClick={() => setFilter(f)}

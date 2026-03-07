@@ -20,14 +20,19 @@ export default function SignaturesView() {
   const [selected, setSelected] = useState<any>(null)
   const [loading, setLoading] = useState(true)
   const [applyStatus, setApplyStatus] = useState<Record<string, string>>({})
+  const [improvements, setImprovements] = useState<any[]>([])
+  const [dismissed, setDismissed] = useState<Set<string>>(new Set())
+  const [updating, setUpdating] = useState<string | null>(null)
 
   useEffect(() => {
     Promise.all([
       api.getSignatures(),
       api.getApprovalHistory(),
-    ]).then(([sigs, appr]) => {
+      api.checkImprovement(),
+    ]).then(([sigs, appr, impr]) => {
       setSignatures(sigs.signatures || [])
       setApprovals(appr.approvals || [])
+      setImprovements(impr.improvements || [])
       if (sigs.signatures?.length > 0) setSelected(sigs.signatures[0])
       setLoading(false)
     }).catch(console.error)
@@ -77,6 +82,22 @@ export default function SignaturesView() {
     }
   }
 
+  const handleUpdateSignature = async (imp: any) => {
+    setUpdating(imp.signature_id)
+    try {
+      await api.updateSignature(imp.signature_id, {
+        ...imp.best_batch,
+        operator_id: 'demo_operator',
+      })
+      setDismissed(prev => new Set([...prev, imp.signature_id]))
+      const sigs = await api.getSignatures()
+      setSignatures(sigs.signatures || [])
+    } catch (e) {
+      console.error(e)
+    }
+    setUpdating(null)
+  }
+
   if (loading) return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--text-secondary)' }}>
       Loading signatures...
@@ -112,9 +133,62 @@ export default function SignaturesView() {
           <h1 style={{ margin: 0, fontSize: 22, fontWeight: 700 }}>Golden Signatures</h1>
         </div>
         <p style={{ margin: '0 0 0 30px', color: 'var(--text-secondary)', fontSize: 13 }}>
-          Optimal parameter sets extracted from {'{'}42{'}'} feasible batches — human-approved manufacturing blueprints
+          Optimal parameter sets extracted from 42 feasible batches — human-approved manufacturing blueprints
         </p>
       </div>
+
+      {/* Continuous Learning Alerts */}
+      {improvements.filter(i => !dismissed.has(i.signature_id)).map(imp => (
+        <div key={imp.signature_id} style={{
+          background: 'rgba(136,102,255,0.08)',
+          border: '1px solid rgba(136,102,255,0.35)',
+          borderRadius: 10,
+          padding: '14px 20px',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          gap: 16,
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <span style={{ fontSize: 18, color: 'var(--purple)' }}>⟳</span>
+            <div>
+              <div style={{ fontWeight: 700, fontSize: 13, color: 'var(--purple)', marginBottom: 2 }}>
+                Continuous Learning — Better Batch Found
+              </div>
+              <div style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
+                Batch <span style={{ color: 'var(--cyan)', fontFamily: 'monospace' }}>{imp.best_batch.batch_id}</span> outperforms{' '}
+                <span style={{ color: 'var(--purple)' }}>{imp.signature_id}</span> by{' '}
+                <span style={{ color: 'var(--green)' }}>+{imp.improvement_pct}%</span>{' '}
+                — Dissolution {imp.best_batch.dissolution_rate?.toFixed(1)}%, Friability {imp.best_batch.friability?.toFixed(2)}%
+              </div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', gap: 8, flexShrink: 0 }}>
+            <button
+              onClick={() => handleUpdateSignature(imp)}
+              disabled={updating === imp.signature_id}
+              style={{
+                background: 'var(--purple)', color: '#fff', border: 'none',
+                borderRadius: 7, padding: '8px 16px', fontSize: 12,
+                fontWeight: 700, cursor: 'pointer', letterSpacing: 0.5,
+                opacity: updating === imp.signature_id ? 0.6 : 1,
+              }}
+            >
+              {updating === imp.signature_id ? 'Updating...' : 'UPDATE SIGNATURE'}
+            </button>
+            <button
+              onClick={() => setDismissed(prev => new Set([...prev, imp.signature_id]))}
+              style={{
+                background: 'transparent', color: 'var(--text-secondary)',
+                border: '1px solid var(--border)', borderRadius: 7,
+                padding: '8px 12px', fontSize: 12, cursor: 'pointer',
+              }}
+            >
+              Dismiss
+            </button>
+          </div>
+        </div>
+      ))}
 
       {/* Signature Cards */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
@@ -158,7 +232,6 @@ export default function SignaturesView() {
                 {sig.objective}
               </div>
 
-              {/* Key metrics */}
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginBottom: 16 }}>
                 {[
                   { label: 'Dissolution', value: `${sig.dissolution_rate?.toFixed(1)}%`, good: sig.dissolution_rate > 85 },
@@ -166,9 +239,7 @@ export default function SignaturesView() {
                   { label: 'Hardness', value: `${sig.hardness?.toFixed(0)}N`, good: sig.hardness > 50 },
                   { label: 'Energy', value: `${sig.total_energy_kwh?.toFixed(1)} kWh`, good: true },
                 ].map(m => (
-                  <div key={m.label} style={{
-                    background: 'var(--surface2)', borderRadius: 6, padding: '8px 10px'
-                  }}>
+                  <div key={m.label} style={{ background: 'var(--surface2)', borderRadius: 6, padding: '8px 10px' }}>
                     <div style={{ fontSize: 10, color: 'var(--text-secondary)', marginBottom: 2 }}>{m.label}</div>
                     <div style={{ fontSize: 14, fontWeight: 700, color: m.good ? 'var(--green)' : 'var(--red)' }}>
                       {m.value}
@@ -177,7 +248,6 @@ export default function SignaturesView() {
                 ))}
               </div>
 
-              {/* CF badge */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
                 <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>Compression Force</span>
                 <span style={{ fontSize: 14, fontWeight: 700, color }}>
@@ -207,8 +277,6 @@ export default function SignaturesView() {
       {/* Detail Panel */}
       {selected && (
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
-
-          {/* Parameters */}
           <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 12, padding: 24 }}>
             <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 16 }}>
               {selected.signature_id} — Process Parameters
@@ -230,7 +298,6 @@ export default function SignaturesView() {
             </div>
           </div>
 
-          {/* Quality Outcomes */}
           <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 12, padding: 24 }}>
             <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 16 }}>
               {selected.signature_id} — Quality Outcomes
@@ -275,7 +342,6 @@ export default function SignaturesView() {
               })}
             </div>
 
-            {/* Feasibility badge */}
             <div style={{
               marginTop: 20, padding: '12px 16px',
               background: 'rgba(0,212,255,0.08)', borderRadius: 8,
@@ -307,9 +373,7 @@ export default function SignaturesView() {
               }}>
                 <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
                   <span style={{ fontSize: 13, fontWeight: 600 }}>{a.batch_id}</span>
-                  <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
-                    {a.operator_id}
-                  </span>
+                  <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>{a.operator_id}</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                   {a.predicted_outcomes && (

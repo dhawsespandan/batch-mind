@@ -37,6 +37,8 @@ export default function DashboardView() {
     { label: 'Feasible Batches', value: `${overview?.feasible_batches}/60`, color: 'var(--cyan)', sub: overview?.feasibility_window },
     { label: 'Energy Saving', value: `${overview?.energy_saving_potential_pct}%`, color: 'var(--amber)', sub: `Min: ${overview?.min_energy_kwh} kWh` },
     { label: 'Golden Signatures', value: overview?.golden_signatures, color: 'var(--purple)', sub: 'Feasibility-constrained' },
+    { label: 'Avg CO₂e / Batch', value: `${overview?.mean_co2e_kg} kg`, color: 'var(--green)', sub: `0.82 kg/kWh · India grid` },
+    { label: 'CO₂e Saving Potential', value: `${overview?.co2e_saving_kg} kg`, color: 'var(--amber)', sub: `${overview?.co2e_saving_pct}% per batch` },
   ]
 
   return (
@@ -56,7 +58,7 @@ export default function DashboardView() {
       </div>
 
       {/* Stat Cards */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
         {statCards.map(s => (
           <Card key={s.label}>
             <div style={{ fontSize: 12, color: 'var(--text-secondary)', marginBottom: 8 }}>{s.label}</div>
@@ -65,6 +67,26 @@ export default function DashboardView() {
           </Card>
         ))}
       </div>
+
+      {/* Carbon Banner */}
+      <div style={{
+        display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12,
+        padding: '16px 20px',
+        background: 'rgba(0,255,136,0.06)', border: '1px solid rgba(0,255,136,0.2)', borderRadius: 12,
+        }}>
+          {[
+            { label: 'Carbon Intensity', value: `${overview?.carbon_intensity} kg CO₂e/kWh`, sub: 'India CEA 2023' },
+            { label: 'Min Batch Emissions', value: `${overview?.min_co2e_kg} kg CO₂e`, sub: 'GS_ENERGY signature' },
+            { label: 'Max Batch Emissions', value: `${overview?.max_co2e_kg} kg CO₂e`, sub: 'Worst recorded batch' },
+            { label: 'Emission Reduction Target', value: `${overview?.co2e_saving_kg} kg CO₂e`, sub: 'Per batch vs worst case' },
+          ].map(c => (
+          <div key={c.label}>
+            <div style={{ fontSize: 11, color: 'var(--text-secondary)', marginBottom: 4, textTransform: 'uppercase', letterSpacing: 0.5 }}>{c.label}</div>
+            <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--green)' }}>{c.value}</div>
+            <div style={{ fontSize: 11, color: 'var(--text-secondary)', marginTop: 2 }}>{c.sub}</div>
+            </div>
+          ))}
+          </div>
 
       {/* Charts Row */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
