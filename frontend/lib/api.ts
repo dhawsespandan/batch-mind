@@ -1,4 +1,4 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://batch-mind.onrender.com'
 
 async function get(path: string) {
   const res = await fetch(`${API_URL}${path}`)
