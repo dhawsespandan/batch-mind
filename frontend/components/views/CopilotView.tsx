@@ -20,6 +20,7 @@ export default function CopilotView() {
   const bottomRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    fetch('https://batch-mind.onrender.com/').catch(() => {})
     api.getSuggestions().then(r => setSuggestions(r.suggestions || [])).catch(console.error)
   }, [])
 
@@ -39,7 +40,7 @@ export default function CopilotView() {
       const res = await api.chat(text, history)
       setMessages(prev => [...prev, { role: 'assistant', content: res.reply }])
     } catch {
-      setMessages(prev => [...prev, { role: 'assistant', content: 'Error reaching backend. Ensure the API is running on port 8000.' }])
+      setMessages(prev => [...prev, { role: 'assistant', content: 'Unable to reach BatchMind backend. The server may be waking up — please try again in a moment.' }])
     } finally {
       setLoading(false)
     }
